@@ -1,0 +1,123 @@
+.pyg_user {
+  background-color: #f9f9f9;
+  height: 100vh;
+  /* 系统功能区 */
+}
+.pyg_user .user_profile {
+  height: 329rpx;
+  width: 750rpx;
+  background-color: white;
+  position: relative;
+}
+.pyg_user .user_profile .user_profile_bg {
+  height: 329rpx;
+  filter: blur(28rpx);
+}
+.pyg_user .user_profile .user_profile_bg image {
+  height: 100%;
+  width: 100%;
+}
+.pyg_user .user_profile .image_wrapper {
+  position: absolute;
+  left: 289rpx;
+  top: 32rpx;
+}
+.pyg_user .user_profile .image_wrapper image {
+  border-radius: 50%;
+  height: 172rpx;
+  width: 172rpx;
+}
+.pyg_user .user_profile .user_nickname {
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  top: 220rpx;
+  font-size: 32rpx;
+  color: white;
+}
+.pyg_user .user_profile .userinfo_button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+}
+.pyg_user .order_func {
+  height: 144rpx;
+  margin: 20rpx 12rpx;
+  width: calc(100vw - 24rpx);
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.pyg_user .order_func .order_to_pay {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pyg_user .order_func .order_to_pay .iconfont.icon-icon-test {
+  font-size: 50rpx;
+}
+.pyg_user .order_func .order_to_pay .text {
+  font-size: 26rpx;
+}
+.pyg_user .order_func .order_to_recieve {
+  flex: 1;
+  text-align: center;
+}
+.pyg_user .order_func .order_to_recieve .iconfont.icon-daishouhuo {
+  font-size: 50rpx;
+}
+.pyg_user .order_func .order_to_recieve .text {
+  font-size: 26rpx;
+}
+.pyg_user .order_func .order_to_drawback {
+  flex: 1;
+  text-align: center;
+}
+.pyg_user .order_func .order_to_drawback .iconfont.icon-tuikuan {
+  font-size: 50rpx;
+}
+.pyg_user .order_func .order_to_drawback .text {
+  font-size: 26rpx;
+}
+.pyg_user .order_func .order_all {
+  flex: 1;
+  text-align: center;
+}
+.pyg_user .order_func .order_all .iconfont.icon-quanbudingdan {
+  font-size: 50rpx;
+}
+.pyg_user .order_func .order_all .text {
+  font-size: 26rpx;
+}
+.pyg_user .system_func {
+  height: 520rpx;
+  margin: 0 12rpx;
+  width: calc(100vw - 24rpx);
+  background-color: white;
+}
+.pyg_user .system_func .func_list_item {
+  height: 101rpx;
+  width: 726rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #c8c8c8;
+  color: #434343;
+}
+.pyg_user .system_func .func_list_item .left {
+  display: flex;
+  align-items: center;
+}
+.pyg_user .system_func .func_list_item .left .iconfont {
+  margin: 0 28rpx 0 40rpx;
+  font-size: 45rpx;
+}
+.pyg_user .system_func .func_list_item .left text.text {
+  font-size: 26rpx ;
+}
+.pyg_user .system_func .func_list_item .right {
+  font-size: 26rpx;
+  margin-right: 46rpx;
+}

@@ -1,0 +1,46 @@
+<view class="pyg_index">
+  <!-- 首页搜索框开始 -->
+  <SearchInput/>
+  <!-- 首页搜索框结束 -->
+  <!-- 首页轮播图开始 -->
+  <view class="pyg_swiper">
+    <swiper indicator-color="true" circular="true" indicator-dots="true">
+      <swiper-item wx:for="{{swiper_list}}" wx:key="goods_id">
+        <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 首页轮播图结束 -->
+  <!-- 分类导航开始 -->
+  <view class="pyg_catitems">
+    <block wx:for="{{catItems}}" wx:key="index">
+      <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </block>
+  </view>
+  <!-- 分类导航结束 -->
+  <!-- 首页楼层开始 -->
+  <view class="pyg_floorData">
+    <block wx:for="{{floorData}}" wx:key="index">
+      <!-- title 开始 -->
+      <view class="floor_title">
+        <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <!-- title 结束 -->
+      <!-- product_list 开始 -->
+      <view class="product_list">
+        <block wx:for="{{item.product_list}}" wx:for-item="v" wx:for-index="i" wx:key="i">
+          <navigator url="{{v.navigator_url}}" open-type="{{v.open_type}}">
+            <image src="{{v.image_src}}" ></image>
+          </navigator>
+        </block>
+      </view>
+      <!-- product_list 结束 -->
+    </block>
+  </view>
+
+  <!-- 首页楼层结束 -->
+</view>

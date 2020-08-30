@@ -1,0 +1,43 @@
+<view class="pyg_feedback">
+  <!-- 选择问题类型开始 -->
+  <view class="question_types">
+    <view class="question_title">选择问题类型</view>
+    <view class="types_list">
+      <view class="types_list_item">功能问题</view>
+      <view class="types_list_item">性能问题</view>
+      <view class="types_list_item">体验问题</view>
+      <view class="types_list_item">其他问题</view>
+    </view>
+  </view>
+  <!-- 选择问题类型结束 -->
+  <!-- 问题描述开始 -->
+  <textarea class="question_desc" placeholder="请描述您的问题"></textarea>
+  <!-- 问题描述结束 -->
+  <!-- 上传图片开始 -->
+  <view class="pics_list">
+    <view class="pics_list_title">
+      上传图片({{upload_img_count}}/{{chooseImages.length}})
+    </view>
+    <view class="pics_list_add"
+    bindtap="handleChooseImage"
+    >+</view>
+    <view class="pics_list_item"  wx:for="{{chooseImages}}"
+    wx:key="index"
+    >
+      <!-- 放置图片开始 -->
+      <image src="{{item}}"></image>
+      <icon type="clear" size="23" color="red"
+        data-index="{{index}}"
+        bindtap="handleRemoveImage"
+      ></icon>
+      <!-- 放置图片结束 -->
+
+    </view>
+  </view>
+  <!-- 上传图片结束 -->
+  <view class="feedback_submit"
+  bindtap="handleFormSubmit"
+  >
+    提交
+  </view>
+</view>

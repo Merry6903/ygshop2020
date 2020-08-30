@@ -1,0 +1,27 @@
+/* 
+1. 引入需要的字体库
+2. 初始化样式
+ */
+@import "./styles/iconfont.wxss";
+
+/* 
+   小程序里面不支持 * 选择符
+
+  */
+
+page,text,swiper,swiper-item,image,navigator {
+  padding: 0rpx;
+  margin: 0rpx;
+  box-sizing: border-box;
+}
+/* 
+  小程序也是支持变量的 --
+  定义主题颜色还有字体
+ */
+ page{
+   --themeColor:red;
+   font-size:28rpx;
+ }
+ image {
+   width: 100%;
+ }

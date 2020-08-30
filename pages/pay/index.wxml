@@ -1,0 +1,85 @@
+<!-- 
+  支付页面
+ -->
+<view class="pyg_buy">
+  <!-- 收货地址开始 -->
+  <view class="pyg_buy_address">
+    <!-- 收货地址存在开始 -->
+    <block wx:if="{{address.all}}">
+      <view class="address_all">地址：{{address.all}}</view>
+      <view class="nameAndPhone">
+        <text class="name">姓名：{{address.userName}}</text>
+        <text class="telNumber">电话：{{address.telNumber}}</text>
+      </view>
+              <view class="chooseAnotherAddress" 
+                type="primary"
+                size="{{10}}"
+                plain
+              bindtap="handleAddressChange">重选</view>
+    </block>
+    <!-- 收货地址存在结束 -->
+    <!-- 当地址不存在的时候 开始 -->
+    <view class="empty_address" wx:else>
+      <!-- 
+      使用微信wx.chooseAddress 调用系统自带的选择地址功能
+     -->
+      <view class="choose_address" bindtap="handleAddressChoose">选择地址</view>
+    </view>
+    <!-- 当地址不存在的时候 结束-->
+  </view>
+  <!-- 收货地址结束 -->
+  <!-- 已选商品列表开始 -->
+  <view class="product_list">
+    <!-- 标题开始 -->
+    <view class="product_title">已选商品</view>
+    <!-- 标题结束 -->
+    <!-- 商品列表开始 
+      1. 拿到购物小车数据
+      2. 判断 =》 v.checked === true ==> 商品才被渲染出来
+    -->
+    <view class="product_list_item" wx:for="{{carts}}" wx:if="{{item.checked}}" wx:key="index">
+      <view class="image_wrapper">
+        <!-- 
+      如果图片不存在的情况下 直接显示一张空白图片
+      https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg
+     -->
+        <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+      </view>
+      <!-- 商品列表的介绍开始 -->
+      <view class="desc">
+        <view class="title">{{item.goods_name}}</view>
+        <view class="priceAndNum">
+          <view class="price">￥{{item.goods_price}}</view>
+          <view class="num">x{{item.num}}</view>
+        </view>
+      </view>
+      <!-- 商品列表的介绍结束 -->
+    </view>
+    <!-- 商品列表结束 -->
+    <!-- 底部支付栏开始 -->
+    <view class="pay_bottom">
+      <view class="pay_left">
+        <text class="text1">合计:</text>
+        <text class="price1">￥{{totalPrice}}</text>
+      </view>
+      <!-- 
+    当地址不为空 以及 totalNum不为0 的情况下，才能发起支付；
+    否则不可以
+   -->
+      <view class="pay_right">
+        <!-- if {{address.all&&totalNum}}  开始-->
+        <view class="pay_button" wx:if="{{address.all&&totalNum}}" bindtap="handlePay">去支付({{totalNum}})</view>
+        <!-- if {{address.all&&totalNum}}  结束-->
+        <!--else 开始-->
+        <view wx:else class="pay_button_disable">去支付({{totalNum}})</view>
+        <!--else 结束-->
+      </view>
+    </view>
+
+    <!-- 底部支付栏结束 -->
+  </view>
+
+  <!-- 已选商品列表结束 -->
+
+
+</view>

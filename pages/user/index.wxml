@@ -1,0 +1,81 @@
+<view class="pyg_user">
+  <!-- 个人信息开始 -->
+  <view class="user_profile">
+    <block wx:if="{{userInfo.nickName}}">
+      <!-- 图片背景开始 -->
+      <view class="user_profile_bg">
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <!-- 图片背景结束 -->
+      <!-- 个人图片开始 -->
+      <view class="image_wrapper">
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <!-- 个人图片结束 -->
+      <!-- 个人昵称开始 -->
+      <view class="user_nickname">{{userInfo.nickName}}</view>
+      <!-- 个人昵称结束 -->
+    </block>
+    <block wx:else>
+      <button class="userinfo_button" type="warn" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+        登录
+      </button>
+    </block>
+
+  </view>
+  <!-- 个人信息结束 -->
+  <!-- 订单功能区开始 -->
+  <view class="order_func">
+    <navigator url="/pages/order/index?type=1" class="order_to_pay">
+      <view class="iconfont icon-icon-test"></view>
+      <view class="text">代收款</view>
+    </navigator>
+    <navigator url="/pages/order/index?type=1" class="order_to_recieve">
+      <view class="iconfont icon-daishouhuo"></view>
+      <view class="text">待收货</view>
+    </navigator>
+    <navigator url="/pages/order/index?type=1" class="order_to_drawback">
+      <view class="iconfont icon-tuikuan"></view>
+      <view class="text">退货/退款</view>
+    </navigator>
+    <navigator url="/pages/order/index?type=1" class="order_all">
+      <view class="iconfont icon-quanbudingdan"></view>
+      <view class="text">全部订单</view>
+    </navigator>
+
+  </view>
+  <!-- 订单功能区结束 -->
+  <!-- 系统功能列表开始 -->
+  <view class="system_func">
+    <view class="func_list_item">
+      <view class="left">
+        <text class="iconfont icon-lianxikefu"></text>
+        <text class="text">联系客服</text>
+      </view>
+      <view class="right">
+        400-618-4000
+      </view>
+    </view>
+    <!-- 意见反馈开始 -->
+    <navigator url="/pages/feedback/index" class="func_list_item">
+      <view class="left">
+        <text class="iconfont icon-yijianfankui"></text>
+        <text class="text">意见反馈</text>
+      </view>
+    </navigator>
+    <!-- 意见反馈结束 -->
+    <!-- 当前版本开始 -->
+    <view class="func_list_item">
+      <view class="left">
+        <text class="iconfont icon-ziyuan"></text>
+        <text class="text">当前版本</text>
+      </view>
+      <view class="right">
+        v4.1.1
+      </view>
+    </view>
+    <!-- 当前版本结束 -->
+  </view>
+  <!-- 系统功能列表结束 -->
+
+</view>

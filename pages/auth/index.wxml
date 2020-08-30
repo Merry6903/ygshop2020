@@ -1,0 +1,22 @@
+<!-- 
+  授权页面 
+  用到button 的open-type里面的 getUserInfo的开发能力
+  https://developers.weixin.qq.com/miniprogram/dev/component/button.html
+ -->
+
+<view class="auth">
+  <button type="primary" plain open-type="getUserInfo"
+  bindgetuserinfo="handleUserInfo"
+  >
+    获取用户授权
+  </button>
+</view>
+
+<!-- <view>小程序中如何使用收货，获取用户信息，登录接口</view>
+<button type="primary" plain bindtap="handleAddressChoose">
+获取用户收货地址
+</button>
+<button type="primary" plain bindtap="handleLogin">
+获取用户登录凭证
+</button> -->
+

@@ -1,0 +1,64 @@
+.pyg_category {
+
+
+
+    .category_list {
+        overflow: hidden;
+        height: calc(100vh - 100rpx);
+
+        .category_left {
+            height: 100%;
+            width: 182rpx;
+            background-color: #f3f3f3;
+            float: left;
+             /*  */
+            .category_left_item {
+                font-size: 28rpx;
+                line-height: 40rpx;
+                text-align: center;
+                margin-top: 37rpx;
+
+                &:nth-child(1) {
+                    margin-top: 27rpx;
+                }
+            }
+
+            .active {
+                color: var(--themeColor);
+                border-left:4rpx solid #EA4350;
+            }
+        }
+
+        .category_right {
+            height: 100%;
+            float: right;
+            width: calc(100vw - 182rpx);
+            .categories_right_content {
+                overflow: hidden;
+                .category_right_content_title {
+                    font-size: 26rpx;
+                    text-align: center;
+                    margin-top: 28rpx;
+                    margin-bottom: 21rpx;
+                    color:#636363;
+                }
+                .category_right_content_item {
+                    width: 33.33%;
+                    float: left;
+                    text-align: center;
+                    .image_wrapper {
+                      image {
+                        height: 120rpx;
+                        width: 120rpx;
+                      }
+                    }
+                  
+                    .cat_name {
+                        font-size: 21rpx;
+                    }
+                  }
+            }
+        }
+    }
+
+}

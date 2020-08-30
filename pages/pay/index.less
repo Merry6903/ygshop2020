@@ -1,0 +1,175 @@
+.pyg_buy {
+
+    /* 地址 */
+    .pyg_buy_address {
+        background-color: #fff;
+        width: 720rpx;
+        height: 187rpx;
+        margin: 21rpx 19rxp 35rpx 29rpx;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        /* 地址 */
+        .address_all {
+            font-size: 30rpx;
+            color: #434343;
+            margin: 16rpx 17rpx 18rpx 29rpx;
+        }
+
+        .nameAndPhone {
+            margin-left: 29rpx;
+            font: size 26rpx;
+            color:#434343;
+            text.name {
+                margin-right: 19rpx;
+            }
+
+            text.telNumber {}
+        }
+        .chooseAnotherAddress{
+            margin-top: 10rpx;
+            margin-left: 29rpx;
+            color: var(--themeColor);
+
+        }
+
+        /*空白地址 */
+        .empty_address {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .choose_address {
+                width: 303rpx;
+                height: 89rpx;
+                border-radius: 45rpx;
+                border: 2rpx solid #EA4350;
+                color: #EA4350;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    /* 商品列表 */
+    .product_list {
+        margin: 0 32rpx 0 20rpx;
+
+        .product_title {
+            font-size: 26rpx;
+            color: #434343;
+            margin: 17rpx 0 17rpx 26rpx;
+            font-weight: 500;
+        }
+
+        .product_list_item {
+            height: 209rpx;
+            width: 698rpx;
+            overflow: hidden;
+            background-color: white;
+
+            .image_wrapper {
+                float: left;
+                margin: 9rpx 29rpx 9rpx 15rpx;
+
+                image {
+                    height: 191rpx;
+                    width: 191rpx;
+                }
+            }
+
+            .desc {
+                height: 156rpx;
+                margin-top: 26rpx;
+                margin-bottom: 27rpx;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .title {
+                    font-size: 24rpx;
+                    color: #434343;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                }
+
+                .priceAndNum {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .price {
+                        font-size: 24rpx;
+                        color: var(--themeColor);
+                    }
+
+                    .num {
+                        font-size: 28rpx;
+                        color: #434343;
+                        margin-right: 13rpx;
+                    }
+                }
+            }
+        }
+    }
+
+    /* 底部工具栏 */
+    .pay_bottom {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 83rpx;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+
+        .pay_left {
+            .text1 {
+                font-size: 26rpx;
+                color: #292929;
+                margin-left: 29rpx;
+            }
+
+            .price1 {
+                font-size: 28rpx;
+                color: #EA4350;
+            }
+        }
+
+        .pay_right {
+
+            /* 支付按钮 */
+            .pay_button {
+                width: 150rpx;
+                height: 52rpx;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--themeColor);
+                border-radius: 26rpx;
+                color: white;
+                font-size: 21rpx;
+                margin-right: 27rpx;
+            }
+
+            .pay_button_disable {
+                width: 150rpx;
+                height: 52rpx;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #B6B6B6;
+                border-radius: 26rpx;
+                color: white;
+                font-size: 21rpx;
+                margin-right: 27rpx;
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+/* pages/auth/index.wxss */
+.auth{
+  width: 100vw;
+  padding: 10rpx;
+}

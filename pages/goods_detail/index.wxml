@@ -1,0 +1,70 @@
+<view class="goods_detail">
+  <!-- 轮播图开始 -->
+  <view class="goods_detail_swiper">
+    <swiper circular="true" indicator-color="true" indicator-dots="true">
+      <swiper-item wx:for="{{goods_detail.pics}}" wx:key="index">
+        <image src="{{item.pics_mid}}" bindtap="handleImageClick" data-pics="{{goods_detail.pics}}" data-current="{{item.pics_mid}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图结束 -->
+  <!-- 商品描述开始 -->
+  <view class="goods_detail_desc">
+    <view class="desc1">
+      <view class="price">￥{{goods_detail.goods_price}}</view>
+      <view class="shareAndCollect">
+        <view class="share">
+          <view class="iconfont icon-fenxiang"></view>
+          <button class="default" size="default" open-type="share"></button>
+        </view>
+        <view bindtap="handleCollect" class="iconfont  {{isCollect?'icon-shoucang_gaoliang active':'icon-shoucang'}}"></view>
+      </view>
+
+
+
+    </view>
+    <!-- 商品标题开始 -->
+    <view class="desc2">
+      <text class="title">{{goods_detail.goods_name}}</text>
+    </view>
+    <!-- 商品标题结束 -->
+    <!-- 图文详情开始 
+rich-text https://developers.weixin.qq.com/miniprogram/dev/component/rich-text.html
+-->
+    <view class="desc3">
+      <view class="desc3_title">图文详情</view>
+      <rich-text nodes="{{goods_detail.goods_introduce}}"></rich-text>
+    </view>
+    <!-- 图文详情结束 -->
+  </view>
+  <!-- 商品描述结束 -->
+  <!-- 商品工具栏开始 -->
+  <view class="tool_sets">
+    <!-- 联系客服开始 -->
+    <view class="contact">
+      <view class="iconfont icon-lianxikefu"></view>
+      <view class="text">联系客服</view>
+      <!-- 主要是利用button的开放功能 concat 调用系统的客服功能 -->
+      <button class="default" size="default" open-type="contact"></button>
+    </view>
+    <!-- 联系客服结束 -->
+    <!-- 购物车按钮开始 -->
+    <navigator url="/pages/cart/index" open-type="switchTab" class="gouwuche">
+      <view class="iconfont icon-gouwuche"></view>
+      <view class="text">购物车</view>
+    </navigator>
+    <!-- 购物车按钮结束 -->
+    <!-- 加入购物车开始 -->
+    <view class="addToCart">
+      <view class="text" bindtap="handleCartAdd">加入购物车</view>
+    </view>
+    <!-- 加入购物车结束 -->
+    <!-- 立即购买开始 -->
+    <view  class="buy">
+      <view class="text" bindtap="handleBuy">立即购买</view>
+    </view>
+    <!-- 立即购买结束-->
+  </view>
+  <!-- 商品工具栏结束 -->
+
+</view>

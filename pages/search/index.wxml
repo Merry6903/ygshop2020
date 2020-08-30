@@ -1,0 +1,14 @@
+<view class="search_center">
+  <!-- 左边输入框内容开始 -->
+  <view class="search_input">
+    <icon type="search"></icon>
+    <input placeholder="输入商品名" bindinput="handleInputChange" value="{{inputVal}}"></input>
+  </view>
+  <!-- 左边输入框内容结束 -->
+  <!-- 右边按钮开始 -->
+  <view class="search_btn" bindtap="handleSearch">搜索</view>
+  <!-- 右边按钮结束 -->
+</view>
+<!-- 搜索列表开始 -->
+<GoodsList  goods_list="{{goods_list}}"/>
+<!-- 搜索列表结束 -->

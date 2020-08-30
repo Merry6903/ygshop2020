@@ -1,0 +1,58 @@
+.pyg_index .pyg_swiper swiper {
+  height: 340rpx;
+}
+.pyg_index .pyg_swiper swiper swiper-item navigator image {
+  height: 100%;
+}
+.pyg_index .pyg_catitems {
+  margin-top: 12rpx;
+  margin-bottom: 43rpx;
+  display: flex;
+}
+.pyg_index .pyg_catitems navigator {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pyg_index .pyg_catitems navigator image {
+  height: 140rpx;
+  width: 128rpx;
+}
+.pyg_index .pyg_floorData .floor_title {
+  margin-top: 10rpx;
+}
+.pyg_index .pyg_floorData .floor_title image {
+  height: 59rpx;
+}
+.pyg_index .pyg_floorData .product_list {
+  overflow: hidden;
+}
+.pyg_index .pyg_floorData .product_list navigator {
+  float: left;
+}
+.pyg_index .pyg_floorData .product_list navigator:nth-child(1) {
+  margin-left: 16rpx;
+  height: 386rpx;
+  width: 232rpx;
+}
+.pyg_index .pyg_floorData .product_list navigator:nth-child(2),
+.pyg_index .pyg_floorData .product_list navigator:nth-child(4) {
+  margin-left: 15rpx;
+  height: 188rpx;
+  width: 233rpx;
+}
+.pyg_index .pyg_floorData .product_list navigator:nth-child(3),
+.pyg_index .pyg_floorData .product_list navigator:nth-child(5) {
+  margin-left: 15rpx;
+  height: 188rpx;
+  width: 223rpx;
+}
+.pyg_index .pyg_floorData .product_list navigator:nth-child(3),
+.pyg_index .pyg_floorData .product_list navigator:nth-child(2) {
+  margin-bottom: 10rpx;
+}
+.pyg_index .pyg_floorData .product_list navigator image {
+  width: 100%;
+  height: 100%;
+}

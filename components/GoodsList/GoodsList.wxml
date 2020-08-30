@@ -1,0 +1,12 @@
+<view class="search_list">
+  <block wx:for="{{goods_list}}" wx:key="index">
+    <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" open-type="navigate" class="search_list_item">
+      <view class="image_wrap">
+        <image src="https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg"></image>
+      </view>
+      <view class="goods_name">
+        {{item.goods_name}}
+      </view>
+    </navigator>
+  </block>
+</view>

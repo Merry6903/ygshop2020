@@ -1,0 +1,185 @@
+/* 
+  商品列表样式
+*/
+.pyg_cart {
+  /* 购物车列表 */
+  /* 底部工具栏 */
+}
+.pyg_cart .cart_list {
+  height: 100vh;
+  width: 100vw;
+  padding: 27rpx 25rpx 0rpx 27rpx;
+  background-color: white;
+  /* 对应的商品每一列 */
+}
+.pyg_cart .cart_list .cart_list_item {
+  height: 209rpx;
+  width: 698rpx;
+  overflow: hidden;
+  /* 商品描述区  */
+}
+.pyg_cart .cart_list .cart_list_item .iconfont.icon-xuanzhong {
+  margin-top: 87rpx;
+  margin-left: 8rpx;
+  color: var(--themeColor);
+  float: left;
+}
+.pyg_cart .cart_list .cart_list_item .unselected {
+  margin-top: 87rpx;
+  margin-left: 8rpx;
+  height: 35rpx;
+  width: 35rpx;
+  border-radius: 50%;
+  border: 1rpx solid #8A8A8A;
+  color: white;
+  float: left;
+}
+.pyg_cart .cart_list .cart_list_item .image_wrapper {
+  margin: 9rpx 0 9rpx 78rpx;
+}
+.pyg_cart .cart_list .cart_list_item .image_wrapper image {
+  height: 191rpx;
+  width: 191rpx;
+  float: left;
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc .goods_desc_title {
+  padding-top: 26rpx;
+  padding-left: 19rpx;
+  font-size: 24rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc .goods_desc_func {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 28rpx;
+  padding-bottom: 28rpx;
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc .goods_desc_func .price {
+  color: var(--themeColor);
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc .goods_desc_func .goods_desc_addAndSub {
+  display: flex;
+  height: 32rpx;
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc .goods_desc_func .goods_desc_addAndSub .iconfont.icon-iconset0187 {
+  font-size: 32rpx;
+  margin-right: 22rpx;
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc .goods_desc_func .goods_desc_addAndSub .num {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #8A8A8A;
+}
+.pyg_cart .cart_list .cart_list_item .goods_desc .goods_desc_func .goods_desc_addAndSub .iconfont.icon-54 {
+  display: flex;
+  align-self: center;
+  font-size: 32rpx;
+  margin-left: 22rpx;
+}
+.pyg_cart .tools_set {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  border: 1rpx solid #ccc;
+  background-color: white;
+  height: 83rpx;
+}
+.pyg_cart .tools_set .tools_left {
+  display: flex;
+  align-items: center;
+}
+.pyg_cart .tools_set .tools_left .iconfont.icon-xuanzhong {
+  color: var(--themeColor);
+  margin-left: 23rpx;
+}
+.pyg_cart .tools_set .tools_left .unselected {
+  height: 35rpx;
+  width: 35rpx;
+  border-radius: 50%;
+  border: 1rpx solid #8A8A8A;
+  margin-left: 23rpx;
+}
+.pyg_cart .tools_set .tools_left .allSelectText {
+  font-size: 21rpx;
+  color: #8A8A8A;
+  margin-left: 24rpx;
+}
+.pyg_cart .tools_set .tools_left .totalText {
+  margin-left: 36rpx;
+  font-size: 26rpx;
+  color: #292929;
+}
+.pyg_cart .tools_set .tools_left .totalPrice {
+  color: var(--themeColor);
+  font-size: 28rpx;
+}
+.pyg_cart .tools_set .tools_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52rpx;
+  width: 150rpx;
+  background-color: var(--themeColor);
+  color: white;
+  font-size: 21rpx;
+  border-radius: 26rpx;
+  margin-right: 21rpx;
+}
+.pyg_cart .tools_set .tools_right_disable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52rpx;
+  width: 150rpx;
+  background-color: #b6b6b6;
+  color: white;
+  font-size: 21rpx;
+  border-radius: 26rpx;
+  margin-right: 21rpx;
+}
+/* 空白购物车样式 */
+.pyg_cart_empty {
+  height: 100vh;
+  background-color: white;
+}
+.pyg_cart_empty .empty_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f5f64;
+  font-size: 500;
+}
+.pyg_cart_empty .empty_info {
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+.pyg_cart_empty navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pyg_cart_empty navigator .go_shopping {
+  font-size: 20rpx;
+  text-align: center;
+  width: 88rpx;
+  padding: 15rpx;
+  border: 1rpx solid #ccc;
+  color: var(--themeColor);
+}

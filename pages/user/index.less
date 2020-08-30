@@ -1,0 +1,143 @@
+.pyg_user {
+    background-color: #f9f9f9;
+    height: 100vh;
+
+    .user_profile {
+        height: 329rpx;
+        width: 750rpx;
+        background-color: white;
+        position: relative;
+
+        .user_profile_bg {
+            height: 329rpx;
+            filter: blur(28rpx);
+
+            image {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .image_wrapper {
+            position: absolute;
+            left: 289rpx;
+            top: 32rpx;
+
+            image {
+                border-radius: 50%;
+                height: 172rpx;
+                width: 172rpx;
+            }
+        }
+
+        .user_nickname {
+            width: 100vw;
+            position: absolute;
+            text-align: center;
+            top: 220rpx;
+            font-size: 32rpx;
+            color: white;
+        }
+
+        .userinfo_button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%;
+        }
+    }
+
+    .order_func {
+        height: 144rpx;
+        margin: 20rpx 12rpx;
+        width: calc(100vw - 24rpx);
+        display: flex;
+        align-items: center;
+        background-color: white;
+
+        .order_to_pay {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .iconfont.icon-icon-test {
+                font-size: 50rpx;
+            }
+
+            .text {
+                font-size: 26rpx;
+            }
+        }
+
+        .order_to_recieve {
+            flex: 1;
+            text-align: center;
+            .iconfont.icon-daishouhuo {
+                font-size: 50rpx;  
+            }
+
+            .text {
+                font-size: 26rpx;
+            }
+        }
+
+        .order_to_drawback {
+            flex: 1;
+            text-align: center;
+            .iconfont.icon-tuikuan {
+                font-size: 50rpx;  
+            }
+
+            .text {
+                font-size: 26rpx;
+            }
+        }
+
+        .order_all {
+            flex: 1;
+            text-align: center;
+            .iconfont.icon-quanbudingdan {
+                font-size: 50rpx;  
+            }
+
+            .text {
+                font-size: 26rpx;
+            }
+        }
+    }
+    /* 系统功能区 */
+    .system_func {
+        height: 520rpx;
+        margin: 0 12rpx;
+        width: calc(100vw - 24rpx);
+        background-color: white;
+        .func_list_item {
+           height: 101rpx;
+           width: 726rpx;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           border-bottom: 1rpx solid #c8c8c8;
+           color:#434343;
+          .left {
+              display: flex;
+              align-items: center;
+            .iconfont {
+                margin: 0 28rpx 0 40rpx;
+                font-size: 45rpx;
+            }
+      
+            text.text {
+                font-size:26rpx ;
+            }
+          }
+      
+          .right {
+              font-size: 26rpx;
+              margin-right: 46rpx;
+      
+          }
+        }
+
+      }
+}

@@ -1,0 +1,10 @@
+<view class="pyg_tabs">
+  <view class="pyg_tabs_item" 
+   bindtap="handleTabClick"
+   data-id="{{item.id}}"
+    wx:for="{{tabs}}" wx:key="index">
+    <view class="pyg_tabs_title {{item.isActive?'active':''}}">
+      {{item.value}}
+    </view>
+  </view>
+</view>

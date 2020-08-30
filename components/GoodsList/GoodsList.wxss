@@ -1,0 +1,25 @@
+.search_list {
+  padding: 15rpx 26rpx;
+}
+.search_list .search_list_item {
+  width: 698rpx;
+  height: 209rpx;
+  overflow: hidden;
+  border-bottom: 1rpx solid #ccc;
+}
+.search_list .search_list_item .image_wrap {
+  float: left;
+}
+.search_list .search_list_item .image_wrap image {
+  height: 190rpx;
+  width: 190rpx;
+}
+.search_list .search_list_item .goods_name {
+  font-size: 24rpx;
+  margin-top: 26rpx;
+  margin-right: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
